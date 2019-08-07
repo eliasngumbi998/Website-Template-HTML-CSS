@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Blossoms Flowershop</title>
+<link rel="icon" href="picture/logo.png" type="image">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/paa.css">
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onscroll="myFunction()">
+
+<div class="header">
+   <img src="picture/logo.png">
+   <center style="font-size:20px; font-weight: bold; font-family: Lucida Calligraphy;">Let us arrange a smile for you!</center>
+
+
+<div id="navbar">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 20px; float:right;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="index.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+</div>
+
+<div class="slideshow-container">
+  <img class="mySlides" src="picture/img1.jpg" style="width:100%; height: 1000px;">
+  <img class="mySlides" src="picture/img2.jpg" style="width:100%; height: 1000px;">
+  <img class="mySlides" src="picture/img3.jpg" style="width:100%; height: 1000px;">
+</div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<div class="footer">
+    
+    <ul>
+      <p style="float: left; margin-left: 20px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">&copy;Blossom Flowershop</p>
+
+      <li href="#"><img src="icon/ig.png" style="height: 35px; width: 40px;">
+      <li><a href="https://twitter.com/b_flowershop"><img src="icon/twitter.png" style="height: 35px; width: 40px;"></a>
+      <li href="#"><img src="icon/fb.png" style="height: 35px; width: 40px;">
+      <div style="clear: both;"></div>
+    </ul>
+  <div>
+
+
+
+</body>
+</html>

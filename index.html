@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blossoms Flowershop</title>
+<link rel="icon" href="picture/logo.png" type="image">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/paa.css">
+<script type="text/javascript" src="js/slider.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onscroll="myFunction()">
+
+<div class="header">
+   <img src="picture/logo.png">
+   <center style="font-size:20px; font-weight: bold; font-family: Lucida Calligraphy;">Let us arrange a smile for you!</center>
+</div>
+
+ <div id="navbar">
+  <a href="login.html">Logout</a>
+  <a href="contak.html">Contact Us</a>
+  <a href="vid.html">Videos</a>
+  <a href="category.html">Products</a>
+  <a class="active" href="javascript:void(0)">Home</a>
+</div>
+
+
+
+<div class="slideshow-container" style="background-color: #f2f2f2">
+  <img class="mySlides" src="picture/img1.jpg" style="box-shadow: 0px 5px 5px 5px #888888; width:85%; height: 620px; margin-left: 100px;">
+  <img class="mySlides" src="picture/img2.jpg" style="box-shadow: 0px 5px 5px 5px #888888; width:85%; height: 620px; margin-left: 100px;">
+  <img class="mySlides" src="picture/img3.jpg" style="box-shadow: 0px 5px 5px 5px #888888; width:85%; height: 620px; margin-left: 100px;">
+  <img class="mySlides" src="picture/img4.jpg" style="box-shadow: 0px 5px 5px 5px #888888; width:85%; height: 620px; margin-left: 100px;">
+  <img class="mySlides" src="picture/img5.jpg" style="box-shadow: 0px 5px 5px 5px #888888; width:85%; height: 620px; margin-left: 100px;">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<div class="footer">
+    
+    <ul>
+      <p style="float: left; margin-left: 20px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">&copy;Blossom Flowershop</p>
+      <li href="#"><img src="icon/ig.png" style="height: 35px; width: 40px;">
+      <li><a href="https://twitter.com/b_flowershop"><img src="icon/twitter.png" style="height: 35px; width: 40px;"></a>
+      <li href="#"><img src="icon/fb.png" style="height: 35px; width: 40px;">
+      <div style="clear: both;"></div>
+    </ul>
+    
+<div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blossoms Flower Shop</title>
+	<link rel="icon" href="picture/logo.png" type="image">
+	<link rel="stylesheet" type="text/css" href="css/category.css">
+	<link rel="stylesheet" type="text/css" href="css/pic.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".button").click(function(){
+				var value = $(this).attr("data-filter");
+				if (value == "all")
+				{
+					$(".filter").show("1000");
+				}
+				else
+				{
+					$(".filter").not("." + value).hide("1000");
+					$(".filter").filter("." + value).show("1000");
+				}
+				//Add active class
+				$("ul .button").click(function(){
+					$(this).addClass('active').siblings().removeClass('active');
+				})
+			})
+		})
+	</script>
+
+
+
+</head>
+
+<body>
+	
+	<a href="index.html"><img src="picture/logo.png" width="180px" height="100px" align="left"  style="position:absolute; margin-top:-30px; margin-left:20px;">
+
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a class="active" href="category.html">Products</a>
+		<a href="vid.html">Videos</a>
+		<a href="contak.html">Contact Us</a>
+		<a href="login.html" style="float: right; margin-right: 20px;">Logout</a>
+	</div>
+
+
+	<div class="container">
+		<ul>
+			<li class="button active" data-filter="all">ALL</li>
+			<li class="button" data-filter="roses">Roses</li>
+			<li class="button" data-filter="orchids">Orchids</li>
+			<li class="button" data-filter="arrange">Sympathy</li>
+			<div style="clear: both;"></div>
+		</ul>
+
+		<class="box filter all">
+
+		
+		
+		<a href="description/o7.html" ><img src="picture/o7.jpg" class="box filter orchids">
+		<a href="description/o8.html"><img src="picture/o8.jpg" class="box filter orchids">
+		<a href="description/o9.html"><img src="picture/o9.jpg" class="box filter orchids">
+		<a href="description/o10.html"><img src="picture/o10.jpg" class="box filter orchids">
+		<a href="description/o1.html"><img src="picture/o1.jpg" class="box filter orchids">
+		<a href="description/o2.html"><img src="picture/o2.jpg" class="box filter orchids">
+		<a href="description/o3.html"><img src="picture/o3.jpg" class="box filter orchids">
+		<a href="description/o4.html"><img src="picture/o4.jpg" class="box filter orchids">
+		<a href="description/o5.html"><img src="picture/o5.jpg" class="box filter orchids">
+		<a href="description/o6.html"><img src="picture/o6.jpg" class="box filter orchids">
+
+		<a href="description/r6.html"><img src="picture/r6.jpg" class="box filter roses">
+		<a href="description/r7.html"><img src="picture/r7.jpg" class="box filter roses">
+		<a href="description/r8.html"><img src="picture/r8.jpg" class="box filter roses">
+		<a href="description/r9.html"><img src="picture/r9.jpg" class="box filter roses">
+		<a href="description/r10.html"><img src="picture/r10.jpg" class="box filter roses">
+		<a href="description/r11.html"><img src="picture/r11.jpg" class="box filter roses">
+		<a href="description/r12.html"><img src="picture/r12.jpg" class="box filter roses">
+		<a href="description/r13.html"><img src="picture/r13.jpg" class="box filter roses">
+		<a href="description/r14.html"><img src="picture/r14.jpg" class="box filter roses">
+		<a href="description/r5.html"><img src="picture/r5.jpg" class="box filter roses">
+		<a href="description/r4.html"><img src="picture/r4.jpg" class="box filter roses">
+		<a href="description/r3.html"><img src="picture/r3.jpg" class="box filter roses">
+		<a href="description/r2.html"><img src="picture/r2.jpg" class="box filter roses">
+		<a href="description/r1.html"><img src="picture/r1.jpg" class="box filter roses">
+		
+		<a href="description/b1.html"><img src="picture/b1.jpg" class="box filter arrange">
+		<a href="description/b2.html"><img src="picture/b2.jpg" class="box filter arrange">
+		<a href="description/b3.html"><img src="picture/b3.jpg" class="box filter arrange">
+		<a href="description/b4.html"><img src="picture/b4.jpg" class="box filter arrange">
+		<a href="description/b5.html"><img src="picture/b5.jpg" class="box filter arrange">
+		<a href="description/b6.html"><img src="picture/b6.jpg" class="box filter arrange">
+
+		<a href="description/a1.html"><img src="picture/a1.jpg" class="box filter arrange">
+		<a href="description/a2.html"><img src="picture/a2.jpg" class="box filter arrange">
+		<a href="description/a3.html"><img src="picture/a3.jpg" class="box filter arrange">
+		<a href="description/a4.html"><img src="picture/a4.jpg" class="box filter arrange">
+		<a href="description/a5.html"><img src="picture/a5.jpg" class="box filter arrange">
+		<a href="description/a6.html"><img src="picture/a6.jpg" class="box filter arrange">
+		<a href="description/a7.html"><img src="picture/a7.jpg" class="box filter arrange">
+		<a href="description/a8.html"><img src="picture/a8.jpg" class="box filter arrange">
+		<a href="description/a9.html"><img src="picture/a9.jpg" class="box filter arrange">
+		<a href="description/a10.html"><img src="picture/a10.jpg" class="box filter arrange">
+
+
+		
+
+	
+	</div>
+
+
+
+
+
+
+</body>
+</html>
